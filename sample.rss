@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:admin="http://webns.net/mvcb/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:hatena="http://www.hatena.ne.jp/info/xmlns#"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+>
+
+<channel rdf:about="http://b.hatena.ne.jp/numb20190118/bookmark">
+<title>numb20190118&#x306E;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;</title>
+<link>http://b.hatena.ne.jp/numb20190118/bookmark</link>
+<description>numb20190118&#x306E;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;</description>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-4663338711031728417" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-368834628" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-359140644" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-30695865" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-363" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-314590540" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-5097960" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-148820594" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-96809746" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-10975646" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-93" />
+  <rdf:li rdf:resource="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-14056451" />
+ </rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-4663338711031728417">
+<title>21&#x4E16;&#x7D00;&#x306E;&#x8CC7;&#x672C; &#x8B1B;&#x6F14;&#x30B9;&#x30E9;&#x30A4;&#x30C9;</title>
+<link>https://cruel.org/books/capital21c/Piketty2014Capital21cJapanese.pdf</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:10:38Z</dc:date>
+<dc:subject>&#x7D4C;&#x6E08;&#x5B66;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E7%B5%8C%E6%B8%88%E5%AD%A6" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-368834628">
+<title>&#x7D4C;&#x6E08;&#x5B66;101 &#x2014; &#x7D4C;&#x6E08;&#x5B66;&#x7684;&#x601D;&#x8003;&#x3092;&#x4E00;&#x822C;&#x306B;&#x5E83;&#x3081;&#x308B;&#x3053;&#x3068;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x975E;&#x55B6;&#x5229;&#x56E3;&#x4F53;&#x3067;&#x3059;</title>
+<link>https://econ101.jp/</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:10:16Z</dc:date>
+<dc:subject>&#x7D4C;&#x6E08;&#x5B66;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E7%B5%8C%E6%B8%88%E5%AD%A6" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-359140644">
+<title>How To Become A Hacker: Japanese</title>
+<link>https://cruel.org/freeware/hacker.html</link>
+<description>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x306E;&#x8AAD;&#x307F;&#x7269;&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:09:55Z</dc:date>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-30695865">
+<title>AWS</title>
+<link>https://aws.amazon.com/jp/</link>
+<description>&#x30A4;&#x30F3;&#x30D5;&#x30E9;&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:09:26Z</dc:date>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-363">
+<title>&#x3068;&#x307B;&#x307B;&#x306E;&#xFF37;&#xFF37;&#xFF37;&#x5165;&#x9580;</title>
+<link>http://www.tohoho-web.com/www.htm</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:08:43Z</dc:date>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-314590540">
+<title>Ruby on Rails &#x30AC;&#x30A4;&#x30C9;&#xFF1A;&#x4F53;&#x7CFB;&#x7684;&#x306B; Rails &#x3092;&#x5B66;&#x307C;&#x3046;
+</title>
+<link>https://railsguides.jp/</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:07:56Z</dc:date>
+<dc:subject>Ruby on Rails</dc:subject>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=Ruby%20on%20Rails" />
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-5097960">
+<title>Twitter</title>
+<link>https://twitter.com/</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:07:13Z</dc:date>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-148820594">
+<title>JavaScript | MDN</title>
+<link>https://developer.mozilla.org/ja/docs/Web/JavaScript</link>
+<description>JavaScript&#x306E;&#x4ED5;&#x69D8;&#x3092;&#x8ABF;&#x3079;&#x308B;&#x306A;&#x3089;&#x3053;&#x306E;&#x30B5;&#x30A4;&#x30C8;&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:04:34Z</dc:date>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<dc:subject>JavaScript</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=JavaScript" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-96809746">
+<title>Continuous Integration and Delivery - CircleCI</title>
+<link>https://circleci.com/</link>
+<description>CI&#x306E;SaaS&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:03:39Z</dc:date>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-10975646">
+<title>GitHub</title>
+<link>https://github.com/</link>
+<description>Git&#x306E;&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:02:53Z</dc:date>
+<dc:subject>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</dc:subject>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" />
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-93">
+<title>&#x306F;&#x3066;&#x306A;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;</title>
+<link>http://b.hatena.ne.jp/</link>
+<description></description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:02:09Z</dc:date>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+<item rdf:about="http://b.hatena.ne.jp/numb20190118/20190118#bookmark-14056451">
+<title>&#x306F;&#x3066;&#x306A;</title>
+<link>http://www.hatena.ne.jp/</link>
+<description>&#x306F;&#x3066;&#x306A;&#x306E;&#x30C8;&#x30C3;&#x30D7;&#x30DA;&#x30FC;&#x30B8;&#x3002;</description>
+<dc:creator>numb20190118</dc:creator>
+<dc:date>2019-01-18T13:00:38Z</dc:date>
+<dc:subject>&#x30A6;&#x30A7;&#x30D6;&#x30B5;&#x30FC;&#x30D3;&#x30B9;</dc:subject>
+<taxo:topics>
+  <rdf:Bag>
+    <rdf:li resource="http://b.hatena.ne.jp/search/tag?q=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9" />
+  </rdf:Bag>
+</taxo:topics>
+</item>
+</rdf:RDF>
