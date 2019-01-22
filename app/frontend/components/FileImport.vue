@@ -54,7 +54,9 @@ export default {
       reader.onload = () => {
         this.parseRss(reader.result);
       };
-      reader.readAsText(e.target.files[0]);
+      const file = e.target.files[0];
+      if (!file) return; // ファイルアップロードのダイアログでキャンセルした場合の対応
+      reader.readAsText(file);
     },
 
     async parseRss(rssData) {
