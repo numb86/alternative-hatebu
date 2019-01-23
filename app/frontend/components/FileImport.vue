@@ -12,7 +12,20 @@
         </span>
       </label>
     </div>
+
     <Processing v-if="isProcessing" />
+
+    <div :class="{'is-active': isActiveModal}" class="modal">
+      <div class="modal-background" />
+      <div class="modal-content">
+        <div class="box has-text-centered">
+          <div class="section">{{ modalMessage }}</div>
+          <div>
+            <button class="button is-info" @click="closeModal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,6 +43,8 @@ export default {
   data() {
     return {
       isProcessing: false,
+      isActiveModal: false,
+      modalMessage: '',
     };
   },
   methods: {
@@ -39,7 +54,9 @@ export default {
       reader.onload = () => {
         this.parseRss(reader.result);
       };
-      reader.readAsText(e.target.files[0]);
+      const file = e.target.files[0];
+      if (!file) return; // ファイルアップロードのダイアログでキャンセルした場合の対応
+      reader.readAsText(file);
     },
 
     async parseRss(rssData) {
@@ -64,7 +81,7 @@ export default {
           }))
         );
       } catch (e) {
-        this.showDialog(
+        this.showModal(
           'ファイルの読み込みに失敗しました。\n対応しているのは RSS1.0 形式のファイルのみです。'
         );
         this.isProcessing = false;
@@ -74,18 +91,30 @@ export default {
     async insertBookmarkList(bookmarkList) {
       try {
         await importBookmarkListApi(bookmarkList);
-        this.showDialog('ブックマークのインポートに成功しました。');
+        this.showModal('ブックマークのインポートに成功しました。');
         window.location.href = window.location.href;
       } catch (e) {
-        this.showDialog(e.message);
+        this.showModal(e.message);
         this.isProcessing = false;
       }
     },
 
-    showDialog(message) {
-      // TODO: アラートではなくモーダルダイアログを使う
-      alert(message);
+    showModal(message) {
+      this.modalMessage = message;
+      this.isActiveModal = true;
+    },
+
+    closeModal() {
+      this.modalMessage = '';
+      this.isActiveModal = false;
+      this.isProcessing = false;
     },
   },
 };
 </script>
+
+<style scoped>
+.modal {
+  cursor: default;
+}
+</style>
