@@ -15,7 +15,7 @@
 
     <Processing v-if="isProcessing" />
 
-    <div :class="{'is-active': modalIsActive}" class="modal">
+    <div :class="{'is-active': isActiveModal}" class="modal">
       <div class="modal-background" />
       <div class="modal-content">
         <div class="box has-text-centered">
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       isProcessing: false,
-      modalIsActive: false,
+      isActiveModal: false,
       modalMessage: '',
     };
   },
@@ -101,12 +101,12 @@ export default {
 
     showModal(message) {
       this.modalMessage = message;
-      this.modalIsActive = true;
+      this.isActiveModal = true;
     },
 
     closeModal() {
       this.modalMessage = '';
-      this.modalIsActive = false;
+      this.isActiveModal = false;
       this.isProcessing = false;
     },
   },
