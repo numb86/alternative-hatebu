@@ -49,13 +49,13 @@ export default {
   },
   methods: {
     uploadFile(e) {
+      const file = e.target.files[0];
+      if (!file) return; // ファイルアップロードのダイアログでキャンセルした場合の対応
       this.isProcessing = true;
       const reader = new FileReader();
       reader.onload = () => {
         this.parseRss(reader.result);
       };
-      const file = e.target.files[0];
-      if (!file) return; // ファイルアップロードのダイアログでキャンセルした場合の対応
       reader.readAsText(file);
     },
 
