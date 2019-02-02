@@ -62,6 +62,7 @@ export default {
   },
   computed: {
     previousButtonPath() {
+      // スプレッド演算子を使えば Object.assign を使わなくて済むはず
       return {
         query: Object.assign({}, this.existQuery, {
           [PAGE_QUERY_KEY]: this.current - 1,
@@ -69,6 +70,7 @@ export default {
       };
     },
     nextButtonPath() {
+      // スプレッド演算子を使えば Object.assign を使わなくて済むはず
       return {
         query: Object.assign({}, this.existQuery, {
           [PAGE_QUERY_KEY]: this.current + 1,

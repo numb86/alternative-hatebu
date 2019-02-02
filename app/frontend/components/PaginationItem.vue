@@ -1,5 +1,6 @@
 <template functional>
   <li v-if="props.isLink">
+    <!-- スプレッド演算子を使えば Object.assign を使わなくて済むはず -->
     <router-link
       :to="{
         query: Object.assign({}, props.existQuery, {
