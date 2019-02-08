@@ -99,7 +99,7 @@ describe('Main', () => {
     });
 
     describe('exist-query', () => {
-      it('searchCondition.keyword が Truthly のときはその値が渡される', () => {
+      it('searchCondition.keyword が Truthy のときはその値が渡される', () => {
         const wrapper = factory({searchCondition: {keyword: 'abc', tags: []}});
         assert(
           wrapper.find(Pagination).props('existQuery')[SEARCH_QUERY_KEY] ===
