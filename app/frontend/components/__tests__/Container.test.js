@@ -8,6 +8,7 @@ import Header from '../Header.vue';
 import Content from '../Content.vue';
 import Login from '../Login.vue';
 
+// https://vue-test-utils.vuejs.org/ja/guides/using-with-vuex.html
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
