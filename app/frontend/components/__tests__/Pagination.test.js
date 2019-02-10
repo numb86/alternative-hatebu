@@ -198,5 +198,119 @@ describe('Pagination', () => {
         });
       });
     });
+
+    describe('実際のレンダリング', () => {
+      describe('props.end が 4 のとき', () => {
+        it('isLink が true の要素が 4 つ並ぶ', () => {
+          const wrapper = factory({end: 4, current: 3});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 4);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === 'true');
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === 'true');
+        });
+      });
+
+      describe('props.end: 5, props.current: 2 のとき', () => {
+        it('page: [1, 2, 3, 4, props.end], isLink: [true, true, true, false, true]', () => {
+          const wrapper = factory({end: 5, current: 2});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 5);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(4).attributes('page') === '5');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === 'true');
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === undefined);
+          assert(list.at(4).attributes('is-link') === 'true');
+        });
+      });
+
+      describe('props.end: 5, props.current: 4 のとき', () => {
+        it('page: [1, 2, props.current - 1, props.current, this.current + 1], isLink: [true, false, true, true, true]', () => {
+          const wrapper = factory({end: 5, current: 4});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 5);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(4).attributes('page') === '5');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === undefined);
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === 'true');
+          assert(list.at(4).attributes('is-link') === 'true');
+        });
+      });
+
+      describe('props.end: 8, props.current: 2 のとき', () => {
+        it('page: [1, 2, 3, 4, props.end], isLink: [true, true, true, false, true]', () => {
+          const wrapper = factory({end: 8, current: 2});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 5);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(4).attributes('page') === '8');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === 'true');
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === undefined);
+          assert(list.at(4).attributes('is-link') === 'true');
+        });
+      });
+
+      describe('props.end: 8, props.current: 3 のとき', () => {
+        it('page: [1, 2, 3, props.current + 1, props.current + 2, props.end], isLink: [true, true, true, true, false, true]', () => {
+          const wrapper = factory({end: 8, current: 3});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 6);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(4).attributes('page') === '5');
+          assert(list.at(5).attributes('page') === '8');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === 'true');
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === 'true');
+          assert(list.at(4).attributes('is-link') === undefined);
+          assert(list.at(5).attributes('is-link') === 'true');
+        });
+      });
+
+      describe('props.end: 8, props.current: 4 のとき', () => {
+        it('page: [1, 2, props.current - 1, props.current, props.current + 1, props.current + 2, props.end], isLink: [true, true, true, true, true, false, true]', () => {
+          const wrapper = factory({end: 8, current: 4});
+          const list = wrapper.findAll(PaginationItem);
+          assert(list.length === 7);
+          assert(list.at(0).attributes('page') === '1');
+          assert(list.at(1).attributes('page') === '2');
+          assert(list.at(2).attributes('page') === '3');
+          assert(list.at(3).attributes('page') === '4');
+          assert(list.at(4).attributes('page') === '5');
+          assert(list.at(5).attributes('page') === '6');
+          assert(list.at(6).attributes('page') === '8');
+          assert(list.at(0).attributes('is-link') === 'true');
+          assert(list.at(1).attributes('is-link') === undefined);
+          assert(list.at(2).attributes('is-link') === 'true');
+          assert(list.at(3).attributes('is-link') === 'true');
+          assert(list.at(4).attributes('is-link') === 'true');
+          assert(list.at(5).attributes('is-link') === undefined);
+          assert(list.at(6).attributes('is-link') === 'true');
+        });
+      });
+    });
   });
 });
