@@ -1,5 +1,8 @@
 {
   "extends": ["plugin:vue/recommended", "numb"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "vue/max-attributes-per-line": ["off"]
   }

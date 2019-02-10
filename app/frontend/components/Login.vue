@@ -19,7 +19,7 @@
         </div>
 
         <div class="has-text-centered">
-          <button class="button">Login</button>
+          <input type="submit" class="button" value="Login" >
           <div v-if="errorMessage" class="has-text-danger">{{ errorMessage }}</div>
         </div>
       </form>

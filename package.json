@@ -11,7 +11,8 @@
     "start": "yarn && webpack-dev-server --mode=development",
     "heroku-postbuild": "yarn && NODE_ENV=production webpack --mode=production",
     "lint": "eslint --ext js,vue app/frontend/",
-    "lint:fix": "eslint --ext js,vue app/frontend/ --fix"
+    "lint:fix": "eslint --ext js,vue app/frontend/ --fix",
+    "test": "jest"
   },
   "dependencies": {
     "bulma": "^0.7.2",
@@ -48,5 +49,11 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
     "webpack-manifest-plugin": "^2.0.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    }
   }
 }
