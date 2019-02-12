@@ -7,7 +7,7 @@
           <!-- vue/html-self-closing と prettier/prettier が衝突してしまうので回避している -->
           <!-- eslint-disable prettier/prettier -->
           <div class="control"><input v-model="userName" class="input" type="text" ></div>
-          <!-- eslint-ensable prettier/prettier -->
+          <!-- eslint-enable prettier/prettier -->
         </div>
 
         <div class="field">
@@ -15,7 +15,7 @@
           <!-- vue/html-self-closing と prettier/prettier が衝突してしまうので回避している -->
           <!-- eslint-disable prettier/prettier -->
           <div class="control"><input v-model="password" class="input" type="password" ></div>
-          <!-- eslint-ensable prettier/prettier -->
+          <!-- eslint-enable prettier/prettier -->
         </div>
 
         <div class="has-text-centered">
