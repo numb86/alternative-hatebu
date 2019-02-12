@@ -10,7 +10,7 @@
           type="text"
           placeholder="検索したいキーワードを入力"
         >
-        <!-- eslint-ensable prettier/prettier -->
+        <!-- eslint-enable prettier/prettier -->
       </form>
     </div>
   </div>
