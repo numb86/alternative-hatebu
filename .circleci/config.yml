@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.9.0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-
+            # fallback to using the latest cache if no exact match is found
+            - dependencies-
+      - run:
+          name: Install
+          command: yarn install
+      - run:
+          name: Run Lint
+          command: yarn lint
+      - run:
+          name: Run Test
+          command: yarn test
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-
